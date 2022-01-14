@@ -65,7 +65,8 @@ body {
     // justify-content: center;
     align-items: center;
 
-    height: 76vh;
+    min-height: 76vh;
+    padding-bottom: 2rem;
 
     .input {
         padding: 0;
@@ -95,7 +96,7 @@ body {
             }
 
         }
-        
+
         span {
             margin: 0;
             padding: 0;
@@ -248,12 +249,38 @@ body {
 
 // width 
 
+@media screen and (max-width: 1400px){ 
+    // $width: 40vw;
+    .main {
+        .input {
+            input {
+                width: 60vw;    
+                // font-size: 1.3rem;   
+            }
+            span {
+                button {
+                    // font-size: 1.3rem;
+                }
+            }
+        }
+        .output {
+            li {
+                width: calc(60vw + 5rem);
+                p {
+                    width: calc(60vw + 5rem);
+                }
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 810px){ 
     // $width: 40vw;
     .main {
         .input {
             input {
-                width: $width-ipad;    
+                width: 60vw;    
                 font-size: 1.3rem;   
             }
             span {
@@ -264,7 +291,10 @@ body {
         }
         .output {
             li {
-                width: calc(40vw + 5rem);
+                width: calc(60vw + 5rem);
+                p {
+                    width: calc(60vw + 5rem);
+                }
             }
         }
     }
@@ -296,7 +326,7 @@ body {
         font-size: 4rem;
     }
     .main {
-        height: 82vh;
+        min-height: 81vh;
         .input {
             input {  
                 font-size: 1.1rem;   
@@ -329,6 +359,43 @@ body {
     h1{
         font-size: 3rem;
     }
+    .wrapper {
+        padding: 0em 0em 0em 0em;
+        max-width: 100vw;
+    }
+    .main {
+        .input {
+            padding-top: 0;
+            input {  
+                width: calc(100vw - 5rem);
+            }
+            span {
+                button {
+                    background: $color-white-hover;
+                    color: $color-pink;
+                    font-size: 1.1rem;
+                    &:hover {
+                        background: hsla(272, 29%, 90%, 0.842);
+                    }
+                    &:focus {
+                        background: hsla(272, 29%, 90%, 0.7);
+                    }
+                }
+            }
+        }
+        .output {
+
+            ul {
+                li {
+                    width: 100vw;
+                    p {
+                        width: 100vw;
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 

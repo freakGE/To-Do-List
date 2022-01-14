@@ -62,7 +62,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 76vh;
+  min-height: 76vh;
+  padding-bottom: 2rem;
 }
 
 .main .input {
@@ -276,16 +277,31 @@ body {
   color: #d91c7e;
 }
 
+@media screen and (max-width: 1400px) {
+  .main .input input {
+    width: 60vw;
+  }
+  .main .output li {
+    width: calc(60vw + 5rem);
+  }
+  .main .output li p {
+    width: calc(60vw + 5rem);
+  }
+}
+
 @media screen and (max-width: 810px) {
   .main .input input {
-    width: 40vw;
+    width: 60vw;
     font-size: 1.3rem;
   }
   .main .input span button {
     font-size: 1.3rem;
   }
   .main .output li {
-    width: calc(40vw + 5rem);
+    width: calc(60vw + 5rem);
+  }
+  .main .output li p {
+    width: calc(60vw + 5rem);
   }
 }
 
@@ -309,7 +325,7 @@ body {
     font-size: 4rem;
   }
   .main {
-    height: 82vh;
+    min-height: 81vh;
   }
   .main .input input {
     font-size: 1.1rem;
@@ -337,6 +353,33 @@ body {
 @media screen and (max-width: 531px) {
   h1 {
     font-size: 3rem;
+  }
+  .wrapper {
+    padding: 0em 0em 0em 0em;
+    max-width: 100vw;
+  }
+  .main .input {
+    padding-top: 0;
+  }
+  .main .input input {
+    width: calc(100vw - 5rem);
+  }
+  .main .input span button {
+    background: rgba(240, 235, 244, 0.85);
+    color: #E64398;
+    font-size: 1.1rem;
+  }
+  .main .input span button:hover {
+    background: rgba(230, 222, 237, 0.842);
+  }
+  .main .input span button:focus {
+    background: rgba(230, 222, 237, 0.7);
+  }
+  .main .output ul li {
+    width: 100vw;
+  }
+  .main .output ul li p {
+    width: 100vw;
   }
 }
 
