@@ -206,6 +206,7 @@ body {
 .main .output li span {
   margin: 0;
   padding: 0;
+  padding-right: 20px;
   min-width: 20px;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
