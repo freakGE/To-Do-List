@@ -372,10 +372,14 @@ body {
     font-size: 1.1rem;
   }
   .main .input span button:hover {
+    -webkit-transition: 200ms linear;
+    transition: 200ms linear;
     background: rgba(240, 235, 244, 0.85);
     color: #E64398;
   }
   .main .input span button:focus {
+    -webkit-transition: 200ms linear;
+    transition: 200ms linear;
     background: rgba(240, 235, 244, 0.75);
     color: #d91c7e;
   }

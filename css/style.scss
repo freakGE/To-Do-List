@@ -377,10 +377,13 @@ body {
                     // color: black;
                     font-size: 1.1rem;
                     &:hover {
+                        transition: 200ms linear;
+
                         background: hsla(273, 29%, 94%, 0.85);
                         color: $color-pink;
                     }
                     &:focus {
+                        transition: 200ms linear;
                         background: hsla(273, 29%, 94%, 0.75);
                         color: $color-pink-dark;
                     }
