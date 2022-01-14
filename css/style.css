@@ -1,0 +1,439 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Bahnschrift','Impact','Lucida Console', 'Trebuchet MS';
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, right bottom, from(#A1C3D1), to(#B39BC8));
+  background: linear-gradient(to bottom right, #A1C3D1, #B39BC8);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0em 3em 0em 3em;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100vw;
+  height: 20vh;
+  background: #F172A1;
+  color: #F0EBF4;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 76vh;
+}
+
+.main .input {
+  padding: 0;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.main .input input {
+  border-right: none;
+  border: none;
+  padding: 0;
+  padding-left: 5px;
+  margin: 0;
+  width: 30vw;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.main .input input::-webkit-input-placeholder {
+  padding-left: 20px;
+}
+
+.main .input input:-ms-input-placeholder {
+  padding-left: 20px;
+}
+
+.main .input input::-ms-input-placeholder {
+  padding-left: 20px;
+}
+
+.main .input input::placeholder {
+  padding-left: 20px;
+}
+
+.main .input input:focus {
+  outline: none;
+}
+
+.main .input span {
+  margin: 0;
+  padding: 0;
+}
+
+.main .input span button {
+  background: #F172A1;
+  color: #F0EBF4;
+  border-left: none;
+  border: none;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 5rem;
+}
+
+.main .input span button:hover {
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  background: #F0EBF4;
+  color: #F172A1;
+}
+
+.main .input span button:active {
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  background: rgba(240, 235, 244, 0.75);
+}
+
+.main .output {
+  padding: 0;
+  margin: 0;
+}
+
+.main .output ul {
+  border-top: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.main .output li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(30vw + 5rem);
+  height: 3rem;
+  padding-left: 8px;
+  font-size: 1.5rem;
+  background: #F0EBF4;
+  overflow: hidden;
+}
+
+.main .output li:hover {
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  background: rgba(240, 235, 244, 0.85);
+}
+
+.main .output li p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: calc(30vw + 5rem);
+  overflow: hidden;
+}
+
+.main .output li span {
+  margin: 0;
+  padding: 0;
+  min-width: 20px;
+}
+
+.main .output .line {
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.main .output .line button {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.main .output button {
+  margin-left: auto;
+  font-size: 1.5rem;
+  border: none;
+  width: 5rem;
+  min-height: 3rem;
+  background: none;
+}
+
+.main .output span {
+  display: block;
+  padding: 0;
+  margin: 0;
+  color: #F172A1;
+}
+
+.footer {
+  height: 4vh;
+  background: #F0EBF4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer a {
+  font-size: 1.3rem;
+  color: #F172A1;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  color: #E64398;
+}
+
+.footer a:focus {
+  -webkit-transition: 200ms linear;
+  transition: 200ms linear;
+  color: #d91c7e;
+}
+
+@media screen and (max-width: 810px) {
+  .main .input input {
+    width: 40vw;
+    font-size: 1.3rem;
+  }
+  .main .input span button {
+    font-size: 1.3rem;
+  }
+  .main .output li {
+    width: calc(40vw + 5rem);
+  }
+}
+
+@media screen and (max-width: 666px) {
+  .main .input input {
+    font-size: 1.2rem;
+  }
+  .main .input span button {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .wrapper {
+    width: 100vw;
+  }
+  .header {
+    height: 15vh;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .main {
+    height: 82vh;
+  }
+  .main .input input {
+    font-size: 1.1rem;
+  }
+  .main .input span button {
+    font-size: 1.1rem;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    font-size: 3.3rem;
+  }
+}
+
+@media screen and (max-width: 531px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .header {
+    height: 12vh;
+  }
+  .main {
+    height: 85vh;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .header {
+    height: 10vh;
+  }
+  .main {
+    height: 87vh;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .main {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-height: 810px) {
+  .main {
+    height: 95vh;
+  }
+}
+
+@media screen and (max-height: 765px) {
+  .main {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 725px) {
+  .main {
+    height: 105vh;
+  }
+}
+
+@media screen and (max-height: 680px) {
+  .main {
+    height: 110vh;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .main {
+    height: 115vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
