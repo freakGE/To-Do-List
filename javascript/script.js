@@ -65,7 +65,6 @@ function addToDo() {
 
             if (clickCount % 2 == 1){   
                 span.style = 'display: inline';
-                
             } else {
                 span.style = 'display: none';
             }

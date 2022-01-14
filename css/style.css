@@ -173,7 +173,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: calc(30vw + 5rem);
-  height: 3rem;
+  min-height: 3rem;
   padding-left: 8px;
   font-size: 1.5rem;
   background: #F0EBF4;
@@ -190,6 +190,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -204,6 +207,8 @@ body {
   margin: 0;
   padding: 0;
   min-width: 20px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 .main .output .line {
@@ -212,6 +217,11 @@ body {
 }
 
 .main .output .line button {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.main .output .line span {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
