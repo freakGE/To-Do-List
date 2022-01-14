@@ -402,7 +402,9 @@ body {
             }
         }
     }
-    
+    .footer {
+        box-shadow: inset 0px 1px $color-pink-light;
+    }
 }
 
 
@@ -418,7 +420,7 @@ body {
         height: 12vh;
     }
     .main {
-        height: 85vh;
+        min-height: 84vh;
     }
     h1{
         font-size: 2.3rem;
@@ -436,7 +438,7 @@ body {
         height: 10vh;
     }
     .main {
-        height: 87vh;
+        min-height: 86vh;
     }
     h1{
         font-size: 1.7rem;
@@ -484,36 +486,36 @@ body {
 
 @media screen and (max-height: 850px) {
     .main {
-        height: 90vh;
+        min-height: 90vh;
     }
 }
 
 @media screen and (max-height: 810px) {
     .main {
-        height: 95vh;
+        min-height: 95vh;
     }
 }
 
 @media screen and (max-height: 765px) {
     .main {
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
 @media screen and (max-height: 725px) {
     .main {
-        height: 105vh;
+        min-height: 105vh;
     }
 }
 
 @media screen and (max-height: 680px) {
     .main {
-        height: 110vh;
+        min-height: 110vh;
     }
 }
 
 @media screen and (max-height: 650px) {
     .main {
-        height: 115vh;
+        min-height: 115vh;
     }
 }
