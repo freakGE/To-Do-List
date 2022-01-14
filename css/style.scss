@@ -371,14 +371,18 @@ body {
             }
             span {
                 button {
-                    background: $color-white-hover;
-                    color: $color-pink;
+                    box-shadow: inset 0px -1px $color-pink-light;
+                    background: $color-white;
+                    color: $color-pink-light;
+                    // color: black;
                     font-size: 1.1rem;
                     &:hover {
-                        background: hsla(272, 29%, 90%, 0.842);
+                        background: hsla(273, 29%, 94%, 0.85);
+                        color: $color-pink;
                     }
                     &:focus {
-                        background: hsla(272, 29%, 90%, 0.7);
+                        background: hsla(273, 29%, 94%, 0.75);
+                        color: $color-pink-dark;
                     }
                 }
             }
